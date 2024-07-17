@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("com.google.gms.google-services")
+    id("kotlin-parcelize")
 }
 
 android {
@@ -64,4 +65,12 @@ dependencies {
 
     //Coroutines for firebase
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.3")
+
+
+    // Glide
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+
+    // Circular image
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
+
 }

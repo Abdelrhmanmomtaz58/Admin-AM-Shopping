@@ -1,4 +1,4 @@
-package com.momtaz.myapplication
+package com.momtaz.myapplication.activity
 
 import android.app.Activity
 import android.content.Intent
@@ -18,6 +18,8 @@ import androidx.lifecycle.lifecycleScope
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
+import com.momtaz.myapplication.R
+import com.momtaz.myapplication.data.Product
 import com.momtaz.myapplication.databinding.ActivityMainBinding
 import com.skydoves.colorpickerview.ColorEnvelope
 import com.skydoves.colorpickerview.ColorPickerDialog
@@ -39,6 +41,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+        binding.next.setOnClickListener {
+            startActivity(Intent(applicationContext,OrderActivity2::class.java))
+        }
 
         //4
         binding.buttonColorPicker.setOnClickListener {
