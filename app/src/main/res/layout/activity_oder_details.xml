@@ -76,6 +76,16 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         />
 
+                    <ImageView
+                        android:id="@+id/edit"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_edit"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvOrderStatus"
+                        app:layout_constraintStart_toEndOf="@+id/tvOrderStatus"
+                        app:layout_constraintTop_toTopOf="@+id/tvOrderStatus" />
+
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imageOrderState"
                         android:layout_width="30dp"
